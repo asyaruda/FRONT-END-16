@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylegit.css">
+    <script src="index.js" defer></script>
+    <title>Git API</title>
+</head>
+<body>
+    
+    <form action="" id="form">
+        <input value="asyaruda" type="text" id="nameInput" placeholder="Git username">
+        <button type="submit" id="submitButton">Find</button>
+        <div class="userInfoDiv"></div>
+    </form>
+
+    <script type="text/template" id="userTemplate">
+        <div class="userInfoRow">
+            <img src="{{src}}" />
+            <p>{{repos}}</p>
+            <p>{{followers}}</p>
+            <p>{{following}}</p>
+        </div>
+    </script>
+</body>
+</html>
